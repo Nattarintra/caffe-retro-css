@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poiret One", sans-serif;
+  font-family: "Spirax", sans-serif;
+}
+/* Remove default list style */
+ul,
+ol {
+  list-style: none;
+}
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+.navbar li {
+  margin: 10px;
+}
+.navbar a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Mobile first => min-width */
+@media screen and (min-width: 426px) {
+  .navbar li {
+    padding: 10px;
+  }
+  .navbar a {
+    font-size: 2.5rem;
+  }
+}
