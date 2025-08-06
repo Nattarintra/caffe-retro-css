@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poiret One", sans-serif;
-  font-family: "Spirax", sans-serif;
+  /*  */
 }
 /* Remove default list style */
 ul,
@@ -17,6 +17,10 @@ header {
   top: 0;
   left: 0;
   width: 100vw;
+}
+.navbar a,
+.title {
+  font-family: "Spirax", sans-serif;
 }
 .navbar {
   display: flex;
@@ -33,6 +37,50 @@ header {
   text-decoration: none;
   font-size: 1.5rem;
   color: white;
+}
+#hot {
+  background-image: url(./assets/hot.jpg);
+}
+#juicy {
+  background-image: url(./assets/juicy.jpg);
+}
+#cosy {
+  background-image: url(./assets/cosy.jpg);
+}
+.page-wrapper {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.title {
+  color: darkred;
+  font-size: 4rem;
+}
+
+.sub-title p {
+  background-color: darkred;
+  padding: 10px;
+  margin: 20px 10px;
+  width: 80vw;
+  font-size: 1.1rem;
+}
+.menu-wrapper {
+  background-color: black;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-item,
+.menu-price {
+  padding: 10px;
+  margin: 10px;
 }
 
 /* Mobile first => min-width */
