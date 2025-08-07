@@ -3,9 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poiret One", sans-serif;
-  /*  */
 }
-/* Remove default list style */
+/* === Remove default list style === */
 ul,
 ol {
   list-style: none;
@@ -65,19 +64,21 @@ section {
   justify-content: center;
   color: white;
 }
+article {
+  width: 80vw;
+}
 
 .title {
-  color: darkred;
+  color: rgb(139, 0, 0);
   font-size: 4rem;
 }
 .sub-title {
   text-align: center;
 }
 .sub-title p {
-  background-color: darkred;
+  background-color: rgba(139, 0, 0, 0.8);
   padding: 10px;
-  margin: 20px 10px;
-  width: 80vw;
+  margin: 20px 0;
 }
 .sub-title p:nth-child(2) {
   display: none;
@@ -86,8 +87,7 @@ section {
 /* === Menu === */
 
 .menu-wrapper {
-  background-color: black;
-  width: 80vw;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .menu-item li {
   display: flex;
@@ -95,7 +95,6 @@ section {
 }
 .menu-item {
   padding: 10px;
-  /* margin: 10px; */
 }
 
 /* === Responsive === */
@@ -104,13 +103,37 @@ section {
     padding: 10px;
   }
   .navbar a {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+  article {
+    width: 55vw;
+  }
+
+  .sub-title {
+    width: 65vw;
+  }
+  .sub-title p {
+    padding: 13px;
+    width: 55vw;
   }
   .sub-title p:nth-child(2) {
     display: block;
+    float: right;
+    margin-top: 0;
   }
-  .menu-item,
-  .menu-price {
-    margin: 10px;
+  .menu-item {
+    padding: 0 10px;
+    margin: 10px 30px;
+  }
+}
+
+/* === Responsive Desktop === */
+@media screen and (min-width: 769px) {
+  .title {
+    font-size: 5rem;
+  }
+  .sub-title p {
+    font-size: 1.3rem;
+    width: 50vw;
   }
 }
