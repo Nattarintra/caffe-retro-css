@@ -19,7 +19,9 @@ header {
   left: 0;
   width: 100vw;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .navbar {
   display: flex;
   justify-content: center;
