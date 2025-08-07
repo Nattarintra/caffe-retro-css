@@ -10,6 +10,8 @@ ul,
 ol {
   list-style: none;
 }
+
+/* === Navigation Bar === */
 header {
   background-color: rgba(0, 0, 0, 0.5);
   min-height: 50px;
@@ -18,10 +20,7 @@ header {
   left: 0;
   width: 100vw;
 }
-.navbar a,
-.title {
-  font-family: "Spirax", sans-serif;
-}
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -38,6 +37,12 @@ header {
   font-size: 1.5rem;
   color: white;
 }
+.navbar a,
+.title {
+  font-family: "Spirax", sans-serif;
+}
+
+/* === Background Images === */
 #hot {
   background-image: url(./assets/hot.jpg);
 }
@@ -47,7 +52,9 @@ header {
 #cosy {
   background-image: url(./assets/cosy.jpg);
 }
-.page-wrapper {
+
+/* === Section Base === */
+section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,32 +70,47 @@ header {
   color: darkred;
   font-size: 4rem;
 }
-
+.sub-title {
+  text-align: center;
+}
 .sub-title p {
   background-color: darkred;
   padding: 10px;
   margin: 20px 10px;
   width: 80vw;
-  font-size: 1.1rem;
 }
+.sub-title p:nth-child(2) {
+  display: none;
+}
+
+/* === Menu === */
+
 .menu-wrapper {
   background-color: black;
   width: 80vw;
+}
+.menu-item li {
   display: flex;
   justify-content: space-between;
 }
-.menu-item,
-.menu-price {
+.menu-item {
   padding: 10px;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
-/* Mobile first => min-width */
+/* === Responsive === */
 @media screen and (min-width: 426px) {
   .navbar li {
     padding: 10px;
   }
   .navbar a {
     font-size: 2.5rem;
+  }
+  .sub-title p:nth-child(2) {
+    display: block;
+  }
+  .menu-item,
+  .menu-price {
+    margin: 10px;
   }
 }
